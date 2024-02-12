@@ -6,6 +6,8 @@ import Pricing from './routes/Pricing';
 import About from './routes/About';
 import Contact from './routes/Contact';
 
+import './css/style.css';
+
 function App() {
 	return (
 		<Routes>

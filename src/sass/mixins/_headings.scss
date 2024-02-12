@@ -1,0 +1,111 @@
+@mixin heading-max {
+	font-size: 82px;
+	line-height: 107px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin heading-max-light {
+	font-size: 82px;
+	line-height: 107px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@mixin heading-one {
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
+
+@mixin heading-one-light {
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
+
+@mixin heading-two {
+	font-size: 48px;
+	line-height: 62px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
+
+@mixin heading-two-light {
+	font-size: 48px;
+	line-height: 62px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
+
+@mixin heading-three {
+	font-size: 40px;
+	line-height: 52px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
+
+@mixin heading-three-light {
+	font-size: 40px;
+	line-height: 52px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+
+	// @media (max-width:768px){
+
+	// }
+
+	// @media (max-width:575.5px){
+
+	// }
+}
