@@ -4,3 +4,9 @@
 
 	@include poppins-med;
 }
+
+@mixin brief-summ {
+	font-size: 20px;
+	line-height: 26px;
+	@include poppins-med;
+}
