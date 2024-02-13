@@ -11,10 +11,18 @@
 }
 
 // Mixins
+@import './mixins/object-fit';
 @import './mixins/poppins';
+@import './mixins/headings';
+@import './mixins/typography';
+@import './mixins/buttons';
+
+// Typography
+@import './typography/poppins';
 
 // Base
 @import './base/base';
 
-// Typography
-@import './typography/poppins';
+// Components
+@import './components/header';
+@import './components/hero';

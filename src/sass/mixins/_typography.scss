@@ -1,0 +1,12 @@
+@mixin generic-text {
+	font-size: 16px;
+	line-height: 21px;
+
+	@include poppins-med;
+}
+
+@mixin brief-summ {
+	font-size: 20px;
+	line-height: 26px;
+	@include poppins-med;
+}

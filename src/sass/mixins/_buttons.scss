@@ -1,0 +1,15 @@
+@mixin header-btn {
+	cursor: pointer;
+	width: 153px;
+	padding: 1rem 1.85rem;
+	border: 1px solid #030303;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background-color: rgba(253, 253, 253, 0.02);
+	color: #111111;
+	font-size: 20px;
+	line-height: 26px;
+	outline: none;
+	margin: 0;
+	@include poppins-bold;
+}
