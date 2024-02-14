@@ -7,6 +7,7 @@ import About from './routes/About';
 import Contact from './routes/Contact';
 
 import './css/style.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	return (

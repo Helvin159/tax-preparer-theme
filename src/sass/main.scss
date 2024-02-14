@@ -8,6 +8,7 @@
 	--primary-font: 'Poppins', sans-serif;
 	--primary-font-weight: 400;
 	--primary-font-style: normal;
+	--bs-btn-hover-border-color: #000;
 }
 
 // Mixins
@@ -26,3 +27,4 @@
 // Components
 @import './components/header';
 @import './components/hero';
+@import './components/cta-sections';

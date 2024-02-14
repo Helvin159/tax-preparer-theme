@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import { Col, Row } from 'bootstrap-4-react/lib/components/layout';
 
 import chartIcon from '../assets/svg/icon-chart-line.svg';
 
@@ -7,8 +8,8 @@ const Header = () => {
 	return (
 		<Fragment>
 			<header className='header'>
-				<div className='header__content'>
-					<div className='header__content__nav'>
+				<Row className='header__content'>
+					<Col xs={12} md={6} className='header__content__nav'>
 						<span className='header__content__chart-icon'>
 							<Link to={'/'}>
 								<img src={chartIcon} alt='Chart icon' />
@@ -28,13 +29,13 @@ const Header = () => {
 								<Link to={'/contact'}>Contact</Link>
 							</li>
 						</ul>
-					</div>
-					<div className='header__content__signup'>
+					</Col>
+					<Col xs={12} md={6} className='header__content__signup'>
 						<span>
 							<Link to={'/'}>Join now</Link>
 						</span>
-					</div>
-				</div>
+					</Col>
+				</Row>
 			</header>
 		</Fragment>
 	);
