@@ -6,6 +6,7 @@
 	--primary-bg-color: #ffffff;
 	--secondary-bg-color: #f0f0f0;
 	--primary-font: 'Poppins', sans-serif;
+	--primary-font-color: #030303;
 	--primary-font-weight: 400;
 	--primary-font-style: normal;
 	--bs-btn-hover-border-color: #000;
@@ -26,5 +27,6 @@
 
 // Components
 @import './components/header';
+@import './components/footer';
 @import './components/hero';
 @import './components/cta-sections';
