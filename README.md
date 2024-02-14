@@ -7,7 +7,7 @@ This project, Tax-Theme, is a simple theme designed for individual tax preparers
 - JavaScript
 - ReactJS
 - SCSS
-- Bootstrap
+- React Bootstrap
 - API Integration
 - Google Cloud Services (for database)
 
