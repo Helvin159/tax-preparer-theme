@@ -6,10 +6,14 @@ import PricingChart from '../components/PricingChart';
 const Pricing = () => {
 	const { darkBg, setDarkBg } = useContext(HeaderContext);
 
-	useEffect(() => {
-		setDarkBg(!darkBg);
-		console.log('run');
-	}, []);
+	useEffect(
+		() => {
+			setDarkBg(!darkBg);
+			console.log('run');
+		},
+		// eslint-disable-next-line
+		[]
+	);
 
 	return (
 		<Fragment>
