@@ -1,13 +1,15 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+import { HeaderContext } from '../contexts/HeaderContext';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'bootstrap-4-react/lib/components/layout';
 
 import chartIcon from '../assets/svg/icon-chart-line.svg';
 
 const Header = () => {
+	const { darkBg } = useContext(HeaderContext);
 	return (
 		<Fragment>
-			<Container fluid className='header'>
+			<Container fluid className={`header ${darkBg ? 'dark' : ''}`}>
 				<Row className='header__content'>
 					<Col xs={12} md={6} className='header__content__nav'>
 						<span className='header__content__chart-icon'>

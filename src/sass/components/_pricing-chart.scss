@@ -1,0 +1,78 @@
+.pricing-chart {
+	padding: 0;
+	&__content {
+		transform: translateY(-23%);
+		padding: 1.5rem 0;
+		max-width: 72%;
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		&__pricing {
+			width: 100%;
+			margin: 0 auto;
+			padding: 0.4rem 0 1rem;
+
+			&__package {
+				background-color: var(--secondary-bg-color);
+				padding: 1.5rem 2.25rem;
+				// border: 1px solid black;
+
+				&:nth-child(2) {
+					transform: translateY(-3.5%);
+				}
+				&__header {
+					margin: 0;
+					padding-bottom: 1rem;
+
+					& .popular-pill {
+						text-align: right;
+
+						& span {
+							@include poppins-reg;
+							cursor: pointer;
+							height: 30px;
+							padding: 6px 1.25rem;
+							border: 1px solid #030303;
+							box-sizing: border-box;
+							border-radius: 2px;
+							background-color: rgba(253, 253, 253, 0.02);
+							color: #111111;
+							font-size: 11px;
+							outline: none;
+							text-align: center;
+							display: none;
+						}
+
+						& .show {
+							display: inline;
+						}
+					}
+				}
+
+				&__price {
+					& h4 {
+						@include heading-three;
+						font-size: 42px !important;
+						font-weight: 400;
+					}
+
+					& p {
+						@include generic-text;
+
+						font-size: 14px;
+					}
+
+					& button {
+						@include pricing-btn-clear;
+						margin-top: 2rem;
+						&:hover {
+							border: 1px solid #111111;
+						}
+					}
+				}
+			}
+		}
+	}
+}

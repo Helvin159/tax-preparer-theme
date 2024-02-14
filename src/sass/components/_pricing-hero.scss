@@ -1,0 +1,41 @@
+.pricing-hero {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+
+	&__content {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 6.7rem;
+		&__copy {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			padding: 3.5rem 0;
+
+			& h1 {
+				@include heading-one;
+				font-size: 52px;
+				font-weight: 600;
+				line-height: 68px;
+				color: var(--primary-font-color);
+			}
+
+			& p {
+				@include sub-heading;
+				padding: 0.8rem 0 0;
+				letter-spacing: 0.01px;
+			}
+		}
+	}
+}
+
+.pricing-hero.dark {
+	background-color: var(--secondary-bg-color);
+}

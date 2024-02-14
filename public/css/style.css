@@ -372,8 +372,7 @@
 .pricing-chart {
   padding: 0; }
   .pricing-chart__content {
-    transform: translateY(-23%);
-    padding: 1.5rem 0;
+    transform: translateY(-18%);
     max-width: 72%;
     width: 100%;
     margin: 0 auto;
@@ -382,15 +381,13 @@
     .pricing-chart__content__pricing {
       width: 100%;
       margin: 0 auto;
-      padding: 0.4rem 0 1rem; }
+      background-color: var(--secondary-bg-color); }
       .pricing-chart__content__pricing__package {
-        background-color: var(--secondary-bg-color);
-        padding: 1.5rem 2.25rem; }
+        padding: 0 2rem; }
         .pricing-chart__content__pricing__package:nth-child(2) {
-          transform: translateY(-3.5%); }
+          transform: translateY(-8%); }
         .pricing-chart__content__pricing__package__header {
-          margin: 0;
-          padding-bottom: 1rem; }
+          margin: 0; }
           .pricing-chart__content__pricing__package__header .popular-pill {
             text-align: right; }
             .pricing-chart__content__pricing__package__header .popular-pill span {
@@ -399,7 +396,7 @@
               font-style: normal;
               cursor: pointer;
               height: 30px;
-              padding: 6px 1.25rem;
+              padding: 0px 8px;
               border: 1px solid #030303;
               box-sizing: border-box;
               border-radius: 2px;
@@ -407,18 +404,14 @@
               color: #111111;
               font-size: 11px;
               outline: none;
-              text-align: center;
-              display: none; }
-            .pricing-chart__content__pricing__package__header .popular-pill .show {
-              display: inline; }
+              text-align: center; }
         .pricing-chart__content__pricing__package__price h4 {
           font-size: 40px;
           line-height: 52px;
           font-family: 'Poppins', sans-serif;
           font-weight: 700;
           font-style: normal;
-          font-size: 42px !important;
-          font-weight: 400; }
+          font-size: 42px !important; }
         .pricing-chart__content__pricing__package__price p {
           font-size: 16px;
           line-height: 21px;
@@ -439,7 +432,18 @@
           line-height: 21px;
           outline: none;
           font-family: 'Poppins';
-          font-weight: 600;
-          margin-top: 2rem; }
-          .pricing-chart__content__pricing__package__price button:hover {
-            border: 1px solid #111111; }
+          font-weight: 600; }
+          .pricing-chart__content__pricing__package__price button:nth-child(2) {
+            cursor: pointer;
+            width: 247px;
+            height: 53px;
+            padding: 0px 8px;
+            border: 0;
+            border-radius: 2px;
+            background-color: #111111;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 21px;
+            outline: none;
+            font-family: 'Poppins';
+            font-weight: 600; }

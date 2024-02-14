@@ -14,3 +14,34 @@
 	border-radius: 5px;
 	@include poppins-bold;
 }
+
+@mixin pricing-btn-dark {
+	cursor: pointer;
+	width: 247px;
+	height: 53px;
+	padding: 0px 8px;
+	border: 0;
+	border-radius: 2px;
+	background-color: #111111;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 21px;
+	outline: none;
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+@mixin pricing-btn-clear {
+	cursor: pointer;
+	width: 247px;
+	height: 53px;
+	padding: 0px 8px;
+	border: 1px solid #030303;
+	border-radius: 2px;
+	background-color: rgba(253, 253, 253, 0.02);
+	color: #111111;
+	font-size: 16px;
+	line-height: 21px;
+	outline: none;
+	font-family: 'Poppins';
+	font-weight: 600;
+}
