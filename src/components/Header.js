@@ -17,13 +17,9 @@ const Header = () => {
 		e.preventDefault();
 		setIsOpen(!isOpen);
 
-		if (!isOpen) {
-			removeBodyScroll();
-		}
+		!isOpen && removeBodyScroll();
 
-		if (isOpen) {
-			enableBodyScroll();
-		}
+		isOpen && enableBodyScroll();
 	};
 	return (
 		<Fragment>
