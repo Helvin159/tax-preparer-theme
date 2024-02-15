@@ -1,6 +1,7 @@
 .header {
 	padding: 0.5rem 0.55rem;
 	margin: 0;
+
 	&__content {
 		display: flex;
 		flex-direction: row;
@@ -10,6 +11,10 @@
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 3.95rem;
+
+		@media (max-width: 575.5px) {
+			padding: 0;
+		}
 
 		&__nav {
 			display: flex;
@@ -83,11 +88,17 @@
 		}
 
 		&__mobile {
+			@media (min-width: 575.6px) {
+				display: none;
+			}
 			& button {
 				cursor: pointer;
 				@media (min-width: 575.6px) {
 					display: none;
 				}
+				// position: absolute;
+				// top: 1rem;
+				// left: 1rem;
 			}
 
 			&__nav {
