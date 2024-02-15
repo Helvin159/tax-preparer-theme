@@ -6,6 +6,7 @@ import { Button } from 'bootstrap-4-react/lib/components';
 
 import chartIcon from '../assets/svg/icon-chart-line.svg';
 import closeIcon from '../assets/svg/icon-close.svg';
+import { enableBodyScroll, removeBodyScroll } from '../utils/utils';
 
 const Header = () => {
 	const { darkBg, isOpen, setIsOpen } = useContext(HeaderContext);
@@ -15,6 +16,14 @@ const Header = () => {
 	const handleClick = (e) => {
 		e.preventDefault();
 		setIsOpen(!isOpen);
+
+		if (!isOpen) {
+			removeBodyScroll();
+		}
+
+		if (isOpen) {
+			enableBodyScroll();
+		}
 	};
 	return (
 		<Fragment>
