@@ -7,6 +7,7 @@
 
 		@media (max-width: 575.6px) {
 			flex-direction: column-reverse;
+			max-width: none;
 		}
 
 		&__copy {
@@ -59,6 +60,12 @@
 		&__copy,
 		&__graphic {
 			max-height: 487px;
+		}
+
+		&__copy {
+			@media (max-width: 575.5px) {
+				max-height: none;
+			}
 		}
 	}
 	&__row.reverse {

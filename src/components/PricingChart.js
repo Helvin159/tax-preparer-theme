@@ -9,7 +9,10 @@ const PricingChart = () => {
 		<Container fluid className='pricing-chart'>
 			<Container className='pricing-chart__content' fluid>
 				<Row className='pricing-chart__content__pricing '>
-					<Col sm={4} className='pricing-chart__content__pricing__package'>
+					<Col
+						sm={12}
+						md={4}
+						className='pricing-chart__content__pricing__package'>
 						<Container className='pricing-chart__content__pricing__package__header'>
 							<Row>
 								<Col xs={6} sm={6} md={6} lg={6}>
@@ -26,7 +29,10 @@ const PricingChart = () => {
 							<Button>Try for free</Button>
 						</Container>
 					</Col>
-					<Col sm={4} className='pricing-chart__content__pricing__package'>
+					<Col
+						sm={12}
+						md={4}
+						className='pricing-chart__content__pricing__package'>
 						<Container className='pricing-chart__content__pricing__package__header'>
 							<Row>
 								<Col xs={6} sm={6} md={6} lg={6}>
@@ -43,7 +49,10 @@ const PricingChart = () => {
 							<Button variant={'primary'}>Try for free</Button>
 						</Container>
 					</Col>
-					<Col sm={4} className='pricing-chart__content__pricing__package'>
+					<Col
+						sm={12}
+						md={4}
+						className='pricing-chart__content__pricing__package'>
 						<Container className='pricing-chart__content__pricing__package__header'>
 							<Row>
 								<Col xs={6} sm={6} md={6} lg={6}>

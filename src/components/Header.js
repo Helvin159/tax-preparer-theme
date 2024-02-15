@@ -26,6 +26,7 @@ const Header = () => {
 						</Button>
 
 						<Container
+							fluid
 							className={`header__content__mobile__nav ${
 								isOpen ? 'show' : ''
 							}`}>

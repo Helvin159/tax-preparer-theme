@@ -22,7 +22,7 @@
 			padding: 3.05rem 2rem;
 			// border: 1px solid black;
 
-			@media (max-width: 575.5px) {
+			@media (max-width: 992px) {
 				display: none;
 			}
 
@@ -72,7 +72,7 @@
 			padding: 0;
 			margin: 0;
 			text-align: right;
-			@media (max-width: 575.5px) {
+			@media (max-width: 992px) {
 				display: none;
 			}
 			& span {
@@ -88,17 +88,14 @@
 		}
 
 		&__mobile {
-			@media (min-width: 575.6px) {
+			@media (min-width: 992px) {
 				display: none;
 			}
 			& button {
 				cursor: pointer;
-				@media (min-width: 575.6px) {
+				@media (min-width: 992px) {
 					display: none;
 				}
-				// position: absolute;
-				// top: 1rem;
-				// left: 1rem;
 			}
 
 			&__nav {
