@@ -5,6 +5,10 @@
 		margin: 0 auto;
 		padding: 6rem 0 2.3125rem;
 
+		@media (max-width: 575.6px) {
+			flex-direction: column-reverse;
+		}
+
 		&__copy {
 			padding: 0 0.7rem;
 			margin: 0;
@@ -35,7 +39,6 @@
 		}
 
 		&__graphic {
-			width: calc(100% / 2);
 			padding: 0;
 			margin: 0;
 
@@ -58,6 +61,10 @@
 	}
 	&__row.reverse {
 		flex-direction: row-reverse;
+
+		@media (max-width: 575.6px) {
+			flex-direction: column-reverse;
+		}
 	}
 }
 
