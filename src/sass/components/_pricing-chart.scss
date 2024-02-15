@@ -1,13 +1,15 @@
 .pricing-chart {
 	padding: 0;
 	&__content {
-		transform: translateY(-23%);
 		padding: 1.5rem 0;
 		max-width: 72%;
 		width: 100%;
 		margin: 0 auto;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+		@media (min-width: 575.51px) {
+			transform: translateY(-23%);
+		}
 
 		&__pricing {
 			width: 100%;
@@ -17,10 +19,11 @@
 			&__package {
 				background-color: var(--secondary-bg-color);
 				padding: 1.5rem 2.25rem;
-				// border: 1px solid black;
 
 				&:nth-child(2) {
-					transform: translateY(-3.5%);
+					@media (min-width: 575.51px) {
+						transform: translateY(-3.5%);
+					}
 				}
 				&__header {
 					margin: 0;
@@ -28,6 +31,10 @@
 
 					& .popular-pill {
 						text-align: right;
+						@media (max-width: 575.51px) {
+							text-align: left;
+							margin-bottom: 0.7rem;
+						}
 
 						& span {
 							@include poppins-reg;
@@ -67,6 +74,7 @@
 					& button {
 						@include pricing-btn-clear;
 						margin-top: 2rem;
+						width: 100%;
 						&:hover {
 							border: 1px solid #111111;
 						}
