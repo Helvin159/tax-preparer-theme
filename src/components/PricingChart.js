@@ -70,12 +70,6 @@ const PricingChart = () => {
 						</Container>
 					</Col>
 				</Row>
-				<Row className='pricing-chart__content__features'>
-					<Col md={6}>
-						<h3>Main features</h3>
-					</Col>
-					<Col md={2}></Col>
-				</Row>
 			</Container>
 		</Container>
 	);

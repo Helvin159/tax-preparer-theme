@@ -1,4 +1,6 @@
 * {
 	box-sizing: border-box;
 	color: var(--primary-font-color);
+
+	@include poppins-reg;
 }

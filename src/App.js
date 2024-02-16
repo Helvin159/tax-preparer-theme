@@ -6,6 +6,7 @@ import Pricing from './routes/Pricing';
 import About from './routes/About';
 import Contact from './routes/Contact';
 
+import 'semantic-ui-css/semantic.min.css';
 import './css/style.css';
 
 function App() {
