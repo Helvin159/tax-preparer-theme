@@ -3,44 +3,7 @@ import { Col, Container, Row } from 'bootstrap-4-react/lib/components/layout';
 import Feature from './components/Feature';
 import FeatureAccordion from './components/FeatureAccordion/FeatureAccordion';
 
-const FeatureList = () => {
-	const mainFeatures = {
-		featureType: 'Main features',
-		featureCats: ['Basic', 'Pro', 'Business'],
-		features: [
-			{
-				feature: 'Simple and intuitive tax preparation interface.',
-				includedBasic: true,
-				includedPro: true,
-				includedBusiness: true,
-			},
-			{
-				feature: 'Customizable tax themes and personalized look.',
-				includedBasic: true,
-				includedPro: true,
-				includedBusiness: true,
-			},
-			{
-				feature: 'Mobile-responsive tax design.',
-				includedBasic: true,
-				includedPro: true,
-				includedBusiness: true,
-			},
-			{
-				feature: 'Analytics and reporting tools for tax preparation.',
-				includedBasic: true,
-				includedPro: true,
-				includedBusiness: true,
-			},
-			{
-				feature: 'Multi-language support for tax scenarios.',
-				includedBasic: false,
-				includedPro: true,
-				includedBusiness: true,
-			},
-		],
-	};
-
+const FeatureList = ({ featureType, features, featureCats }) => {
 	return (
 		<Container fluid className='feature-list'>
 			<Container className='feature-list__content'>
@@ -49,16 +12,18 @@ const FeatureList = () => {
 						<h3>Compare features</h3>
 					</Col>
 
-					{mainFeatures.featureCats.map((i, k) => (
-						<Col md={2}>{i}</Col>
+					{featureCats.map((i, k) => (
+						<Col md={2} key={k}>
+							{i}
+						</Col>
 					))}
 				</Row>
 				<Row className='feature-type'>
 					<Col md={6} className='feature-type__title'>
-						<h3>{mainFeatures.featureType}</h3>
+						<h3>{featureType}</h3>
 					</Col>
 				</Row>
-				{mainFeatures.features.map(
+				{features.map(
 					({ feature, includedBasic, includedPro, includedBusiness }, k) => (
 						<Feature
 							feature={feature}
@@ -71,7 +36,7 @@ const FeatureList = () => {
 					)
 				)}
 
-				<FeatureAccordion features={mainFeatures.features} />
+				<FeatureAccordion features={features} />
 			</Container>
 		</Container>
 	);
