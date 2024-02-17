@@ -37,6 +37,15 @@
 		& nav {
 			max-width: 50%;
 			margin: 0 auto;
+
+			@media (max-width: 768px) {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: baseline;
+				max-width: 100%;
+			}
+
 			& ul {
 				list-style-type: none;
 				padding: 0;
@@ -45,6 +54,12 @@
 				justify-content: space-evenly;
 				align-items: center;
 				margin: 0 0 2rem;
+
+				@media (max-width: 768px) {
+					flex-direction: column;
+					margin: 0;
+					padding: 1rem;
+				}
 
 				&:last-child {
 					margin: 0;
@@ -57,6 +72,10 @@
 						font-size: 12px;
 						line-height: 14px;
 						@include poppins-med;
+					}
+
+					@media (max-width: 768px) {
+						padding: 0.15rem 0;
 					}
 				}
 			}
